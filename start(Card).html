@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            transition: 0.3s;
+            width: 40%;
+            border-radius: 5px;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+
+        .container {
+            padding: 2px 16px;
+        }
+
+        .image-cap {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+    <img class="image-cap" src="immagine.jpg" alt="Immagine">
+    <div class="container">
+        <h4><b>Card title</b></h4>
+        <p>Some quick example text to build<br> on the card title and make up the<br> bulk of the card's content.</p>
+        <ul>
+            <li>An item</li>
+            <li>A second item</li>
+            <li>A third item</li>
+        </ul>
+        <a href="#">Card link</a>
+        <a href="#">Another link</a>
+    </div>
+</div>
+</body>
+</html>
