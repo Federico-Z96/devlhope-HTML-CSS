@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>.input-container input[type="submit"][disabled] {
+        background-color: #ccc;
+        cursor: not-allowed;
+    }</style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form>
+        <!-- ...altri input... -->
+        
+        <div class="input-container">
+            <label for="discount">Discount</label>
+            <input type="number" id="discount" name="discount" min="0" max="100" step="2" required>
+        </div>
+        
+        <div class="input-container">
+            <label for="checkbox">Subscribe to Newsletter</label>
+            <input type="checkbox" id="checkbox" name="checkbox" checked>
+        </div>
+        
+        <div class="input-container">
+            <input type="submit" value="Register" disabled>
+        </div>
+    </form>
+</body>
+</html>
