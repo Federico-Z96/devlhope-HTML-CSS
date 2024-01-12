@@ -1,0 +1,50 @@
+
+blockquote {
+	background-color: rgba(0, 0, 0, .12);
+	padding: 8px;
+}
+p:first-letter {
+	float: left;
+	color: darkred;
+	border: 3px ridge darkgoldenrod;
+	padding: 16px;
+	background-color: gold;
+	margin: 8px;
+}
+
+/* Stile base per i link */
+a {
+	color: black;
+	text-decoration: none;
+	transition: color 0.5s;
+   }
+   
+   /* Stile per i link al passaggio del mouse */
+   a:hover {
+	color: red;
+   }
+   
+   /* Stile per i link visitati */
+   a:visited {
+	color: blue;
+   }
+   
+   /* Stile per l'effetto al passaggio del mouse */
+   a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: red;
+	transition: width 0.5s;
+   }
+   
+   /* Stile per l'effetto al passaggio del mouse per i link visitati */
+   a:visited::after {
+	background: blue;
+   }
+   
+   /* Stile per l'effetto al passaggio del mouse attivo */
+   a:hover::after {
+	width: 100%;
+   }
